@@ -1,3 +1,5 @@
+import water from '../assets/water.svg'
+import sun from '../assets/sun.svg'
 function CareScale(props) {
     // const scaleValue = props.scaleValue
     const { scaleValue, careType } = props
@@ -5,7 +7,10 @@ function CareScale(props) {
     // const scaleValue = props.scaleValue et
     // const careType = props.careType
 
-    const scaleType = careType === 'light' ? '☀️' : '💧'
+    const waterImg = <img src={water} alt='icone goutte' />
+    const sunImg = <img src={sun} alt='icone soleil' />
+    const scaleType = careType === 'light' ? sunImg : waterImg
+    // const scaleType = careType === 'light' ? '☀️' : '💧'
 
 
 
